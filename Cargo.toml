@@ -1,0 +1,11 @@
+[package]
+name = "rust-napi-create-string"
+version = "0.1.0"
+authors = ["Kiffin Gish <kiffin.gish@planet.nl>"]
+edition = "2018"
+
+[lib]
+crate-type=["cdylib"]
+
+[dependencies]
+nodejs-sys = "0.3.0"
