@@ -1,6 +1,10 @@
 use nodejs_sys::{napi_create_string_utf8, napi_env, napi_set_named_property, napi_value};
 use std::ffi::CString;
-
+//
+// Register module
+// The N-API documentation recommends `NAPI_MODULE_INIT()` macro for module registration which
+// compiles to the `napi_register_module_v1` function.
+//
 #[no_mangle]
 pub unsafe extern "C" fn napi_register_module_v1(
     env: napi_env,
